@@ -1,46 +1,40 @@
-# junior-frontend-recruitment-task
+## About
 
-Hey there!
+This is my website that shows top artists in the world and in Poland. It is build using React and also Axios. You can check it by downloading it and running "yarn start".
 
-Thank you for joining recruitment process for Junior Front-end Dev at Performante. We have a small task for you, that covers all topics which you'll be able to touch in our common journey 🚀
+## Available Scripts
 
-[Last.fm](https://www.last.fm/) is a well-known website which allows you to manage your music preferences.
+In the project directory, you can run:
 
-**We would like to know which 20 artists are currently the most popular in Poland and all around the World.**
+### `yarn start`
 
-Your task is to create a website which allows us to check this.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The website should look like this:
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-![task preview](http://cdn.perfo.me/junior-frontend-recruitment-task-preview.png)
+### `yarn test`
 
----
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Project goals:
+### `yarn build`
 
-* Implement the website according to the [design](https://www.figma.com/file/3o9ia7vUV89deFesxn2wFh/Recruitment-Landing-Page-Junior-Frontend-Test?node-id=0%3A1)
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* User can select between global and Polish top charts
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-* Top 5 artists are visible as a carousel
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Another 15 artists should be visible as a card
+### `yarn eject`
 
-* User should be able to rate the artists (votes don't have to be saved, we only want to see how it will be visible for the users)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
----
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Basic rules:
-* All JS Frameworks allowed, but you don't have to use them. Just inform us how to run the website if you're using a framework ;)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-* For a purpose of this task, you should fork this repository (pushing changes to this repository is not allowed)
-
-* You should create an account in last.fm to get access to [Last.fm API](https://www.last.fm/api)
-
-* Pay attention to code quality, formatting, conventions etc.
-
-* Remember about users with retina screens and mobile devices
-
----
-
-**Good luck! If you have any questions feel free to ask!**
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
