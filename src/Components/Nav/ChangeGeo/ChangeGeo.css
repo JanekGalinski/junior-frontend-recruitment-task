@@ -1,0 +1,30 @@
+h2 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #3C64B1;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-button {
+    width: 105%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.arrow-down {
+    border: solid #3C64B1;
+  border-width: 0 1px 1px 0;
+  align-self: center;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.nav-button-second {
+    z-index: 1;
+}
