@@ -8,23 +8,40 @@ import TopFiveCarousel from './Components/TopFiveCarousel/TopFiveCarousel';
 class App extends React.Component {
   constructor(props){
     super();
-
     this.state = {
-      message: "" 
+      art: [],
+      message: "",
     }
   }
 
   callbackFunction = (childData) => {
-    this.setState({message: childData})
-    console.log(this.state.message)
-}
+      this.setState({message: childData})
+      console.log(this.state.message)
+      fetch('http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=poland&api_key=b13851316d3a6ff1ac99cf76140016cc&format=json')
+            .then(res => res.json())
+            .then(json => { 
+            this.setState({
+              art: json.topartists.artist,
+            })
+        })
+  }
 
-  render() {
+  componentDidMount () {
+    fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=b13851316d3a6ff1ac99cf76140016cc&format=json')
+      .then(res => res.json())
+      .then(json => { 
+      this.setState({
+        art: json.artists.artist,
+      })
+    })
+  }
+
+  render() {    
     return (
       <>
         <Nav parentCallback = {this.callbackFunction}/>
-        <TopFiveCarousel/>
-        <ArtistsCards/>
+        <TopFiveCarousel art={this.state.art}/>
+        <ArtistsCards art={this.state.art}/>
         <Footer/>
       </>
     )

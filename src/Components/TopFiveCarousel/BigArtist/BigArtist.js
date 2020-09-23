@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './BigArtist.css';
 import {getArtistDetails} from '../../../requests'
 
-
 function BigArtist({name}) {
   const [tag, setTag] = useState([]);
   const [tagOne, setTagOne] = useState([]);
@@ -14,7 +13,6 @@ function BigArtist({name}) {
   function getAndRenderArtistDetails () {
     getArtistDetails(name)
     .then(res => { 
-      console.log(res)
       setTag(res.data.artist.tags.tag[0].name)
       setTagOne(res.data.artist.tags.tag[1].name)
       setTagTwo(res.data.artist.tags.tag[2].name)
@@ -23,20 +21,11 @@ function BigArtist({name}) {
     })
   }
 
-
-
-  // useEffect(() => {
-  //   fetchData();
-  // });
-
   useEffect(() => {
     getAndRenderArtistDetails()
   })
-  
-  
-console.log(photo)
-  return (
 
+  return (
     <>
       <ul>
         <li>

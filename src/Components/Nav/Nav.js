@@ -4,11 +4,9 @@ import logo from '../../Assets/img/logo.svg'
 import header from '../../Assets/img/header.png'
 import ChangeGeo from './ChangeGeo/ChangeGeo';
 
-
 class Nav extends React.Component {
   constructor(props){
     super();
-
     this.state = {
       message: "" 
     }
@@ -17,9 +15,7 @@ class Nav extends React.Component {
   callbackFunction = (childData) => {
     this.setState({message: childData})
     this.props.parentCallback(this.state);
-}
-
-
+  }
 
   render() {
     let iconSrc = logo;
@@ -38,7 +34,6 @@ class Nav extends React.Component {
                 <h1>Top charts created by musicians</h1>
                 <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
                </div>
-              
             </div>
           </nav>
     )
