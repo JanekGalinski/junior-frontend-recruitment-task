@@ -13,6 +13,7 @@ function Footer() {
   let twitterSrc = twitter;
   let youtubeSrc = youtube;
   let linkedinSrc = linkedin;
+  
   return (
     <footer>
       <div className="container">
@@ -34,7 +35,7 @@ function Footer() {
             <p className="footer-text-highlight-letters">Polityka prywatności</p>
           </div>
           <div className="footer-text-small">
-            <p>Consequat justo, elementum enim lobortis. Euismod cras libero, arcu tristique nibh donec ornare gravida sem. Sed iaculis euismod tristique sed libero consequat. Ultrices vitae senectus amet elementum sed tellus nisl orci vestibulum.</p>
+            <p className="footer-text-small-letters">Consequat justo, elementum enim lobortis. Euismod cras libero, arcu tristique nibh donec ornare gravida sem. Sed iaculis euismod tristique sed libero consequat. Ultrices vitae senectus amet elementum sed tellus nisl orci vestibulum.</p>
           </div>
         </div>
       </div>

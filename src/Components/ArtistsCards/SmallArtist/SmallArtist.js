@@ -4,11 +4,9 @@ import './SmallArtist.css';
 import {getArtistDetails} from '../../../requests'
 import placeholder from '../../../Assets/img/placeholder.svg'
 
-
 import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
 import { withStyles } from '@material-ui/core/styles'
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,8 +59,8 @@ function SmallArtist({name, inc}) {
       </div>
       <div className="card-text">
           <p className="card-text-title">{inc}. {name}</p>
-          <p>{tag}, {tagOne}</p>
-          <p>Listeners: {listeners}</p>
+          <p className="card-text-tag">{tag}, {tagOne}</p>
+          <p className="card-text-listeners">Listeners: {listeners}</p>
           <div className="stars">
             <div className={classes.root}>
               <StyledRating name="size-small" defaultValue={3} size="small" />

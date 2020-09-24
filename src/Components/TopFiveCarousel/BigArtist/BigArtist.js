@@ -7,7 +7,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
 import { withStyles } from '@material-ui/core/styles'
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function BigArtist({name, inc}) {
+function BigArtist({name, inc, itemClass}) {
   const [tag, setTag] = useState([]);
   const [tagOne, setTagOne] = useState([]);
   const [tagTwo, setTagTwo] = useState([]);
@@ -51,23 +50,25 @@ function BigArtist({name, inc}) {
   })
 
   return (
-    <div className="slide">
-      <div className="slide-photo-box">
-        <p className="slide-photo-box-number">{inc}</p>
-      </div>
-      <div className="slide-photo">
-        <img className="slide-photo-img" src={photo}></img>
-      </div>
-      <div className="slide-text">
-          <h1>{name}</h1>
-          <p>{tag}, {tagOne}, {tagTwo}</p>
-          <p>Listeners: {listeners}</p>
-          <div className="stars">
-            <div className={classes.root}>
-              <StyledRating name="size-small" defaultValue={3} size="large" />
-            </div>
+      <div class={itemClass}>
+        <div className="inside-slide">
+          <div className="slide-photo-box">
+            <p className="slide-photo-box-number">{inc}</p>
           </div>
-      </div>
+          <div className="slide-photo">
+            <img className="slide-photo-img" src={photo}></img>
+          </div>
+          <div className="slide-text">
+              <h1 className="slide-text-title">{name}</h1>
+              <p className="slide-text-tags">{tag}, {tagOne}, {tagTwo}</p>
+              <p className="slide-text-listeners">Listeners: {listeners}</p>
+              <div className="stars">
+                <div className={classes.root}>
+                  <StyledRating name="size-small" defaultValue={3} size="large" />
+                </div>
+              </div>
+          </div>
+        </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 .card {
-    width: 17%;
+    width: 16%;
     position: relative;
     text-align: center;
     display: flex;
@@ -17,15 +17,39 @@
     background-color: rgb(60,100,177,0.04);
 }
 
+.card-photo-img {
+    height: 30px;
+    width: 30px;
+}
 
 .card-text {
+    height: 40%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .card-text-title {
     font-weight: bold;
     font-size: 18px;
     color: #373F41;
+    margin-top: 30px;
+}
+
+.card-text-tag {
+    font-weight: normal;
+font-size: 14px;
+color: #373F41;
+}
+
+.card-text-listeners {
+    font-weight: 600;
+font-size: 14px;
+color: #737B7D;
+}
+
+p {
+    margin: 0 0;
 }

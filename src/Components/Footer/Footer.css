@@ -5,9 +5,8 @@ footer {
     margin-top: 100px;
 }
 
-
 .container {
-    width: 72%;
+    width: 69%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,4 +65,10 @@ color: #231F20;
 
 .footer-text-small {
     width: 60%;
+}
+
+.footer-text-small-letters{
+    font-weight: 300;
+font-size: 14px;
+color: #C4C4C4;
 }

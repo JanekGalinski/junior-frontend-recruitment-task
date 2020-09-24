@@ -1,4 +1,4 @@
-.carousel {
+.top-carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,14 +6,44 @@
 }
 .carousel-title {
     margin-top: 50px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 32px;
     color: #373F41;     
 }
 
 .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
+    width: 100%;
     display: flex;
-  }
+    justify-content: center;
+}
+
+#myCarousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-inner {
+    width: 35%;
+}
+
+.carousel-control-prev-icon {
+  height: 16px;
+  width: 16px;
+  border: solid #3C64B1;
+  border-width: 0 0 2px 2px;
+  align-self: center;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.carousel-control-next-icon {
+    height: 16px;
+  width: 16px;
+  border: solid #3C64B1;
+  border-width: 2px 2px 0 0;
+  align-self: center;
+  padding: 3px;
+  transform: rotate(45deg);
+}
