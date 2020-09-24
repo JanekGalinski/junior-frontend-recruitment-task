@@ -3,12 +3,37 @@ import { useState } from 'react';
 import './BigArtist.css';
 import {getArtistDetails} from '../../../requests'
 
-function BigArtist({name}) {
+import { makeStyles } from '@material-ui/core/styles';
+import Rating from '@material-ui/lab/Rating';
+import { withStyles } from '@material-ui/core/styles'
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    '& > * + *': {
+      marginTop: theme.spacing(1),
+    },
+  },
+}));
+
+function BigArtist({name, inc}) {
   const [tag, setTag] = useState([]);
   const [tagOne, setTagOne] = useState([]);
   const [tagTwo, setTagTwo] = useState([]);
   const [listeners, setListeners] = useState([]);
   const [photo, setPhoto] = useState([]);
+
+  const classes = useStyles();
+  const StyledRating = withStyles({
+    iconFilled: {
+      color: '#3C64B1',
+    },
+    iconHover: {
+      color: '#3C64B1',
+    },
+  })(Rating);
 
   function getAndRenderArtistDetails () {
     getArtistDetails(name)
@@ -26,18 +51,24 @@ function BigArtist({name}) {
   })
 
   return (
-    <>
-      <ul>
-        <li>
+    <div className="slide">
+      <div className="slide-photo-box">
+        <p className="slide-photo-box-number">{inc}</p>
+      </div>
+      <div className="slide-photo">
+        <img className="slide-photo-img" src={photo}></img>
+      </div>
+      <div className="slide-text">
           <h1>{name}</h1>
-          <h1>{listeners}</h1>
-          <h1>{tag}</h1>
-          <h1>{tagOne}</h1>
-          <h1>{tagTwo}</h1>
-          <img src={photo}></img>
-        </li>
-      </ul>
-    </>
+          <p>{tag}, {tagOne}, {tagTwo}</p>
+          <p>Listeners: {listeners}</p>
+          <div className="stars">
+            <div className={classes.root}>
+              <StyledRating name="size-small" defaultValue={3} size="large" />
+            </div>
+          </div>
+      </div>
+    </div>
   )
 }
 

@@ -10,18 +10,21 @@ class TopFiveCarousel extends React.Component {
   }
 
   render() {
+      var n = 0;
+
+      function increment(){
+        n++;
+        return n;
+      }
     return (
       <main>
-         <section>
-                <ul>
-                    <div className="titles">
-                        <h3>NAME</h3>
-                        <h3>STATUS</h3>
+         <section className="carousel">
+                    <h1 className="carousel-title">{this.props.type} top 5 most wanted artists</h1>
+                    <div className="slideshow-container">
+                      {this.props.art.slice(0, 5).map((artist) => (
+                          <BigArtist name={artist.name} inc={increment()}/> 
+                      ))}
                     </div>
-                    {this.props.art.slice(0, 5).map((artist) => (
-                        <BigArtist name={artist.name}/>
-                    ))}
-                </ul>
          </section>
       </main>
     )
