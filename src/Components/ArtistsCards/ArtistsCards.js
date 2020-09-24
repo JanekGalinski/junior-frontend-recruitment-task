@@ -10,18 +10,21 @@ class ArtistsCards extends React.Component {
   }
 
   render() {
+      var n = 5;
+
+      function increment(){
+        n++;
+        return n;
+      }
     return (
       <main>
-            <section>
-                <ul>
-                    <div className="titles">
-                        <h3>More</h3>
-                        <h3>Artists</h3>
+            <section className="cards">
+                    <h1 className="cards-title">Artists with places 6-20</h1>
+                    <div className="cards-layout">
+                      {this.props.art.slice(5, 20).map((artist) => (
+                          <SmallArtist name={artist.name} inc={increment()}/>
+                      ))}
                     </div>
-                    {this.props.art.slice(5, 20).map((artist) => (
-                        <SmallArtist name={artist.name}/>
-                    ))}
-                </ul>
             </section>
       </main>
     )
