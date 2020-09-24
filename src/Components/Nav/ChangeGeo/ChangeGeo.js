@@ -34,15 +34,15 @@ class ChangeGeo extends Component {
     return (
       <div>
         <button className="nav-button" onClick={this.showMenu}>
-          <h2>TOP GLOBAL CHART</h2>
-          <i class="arrow-down"></i>
+          <h2 className="nav-button-title">TOP GLOBAL CHART</h2>
+          <i className="arrow-down"></i>
         </button>
         {
           this.state.showMenu
             ? (
               <div className="menu" ref={(element) => {this.dropdownMenu = element;}}>
                 <button className="nav-button-second" onClick={this.sendData}>
-                  <h2>TOP POLISH CHART</h2>
+                  <h2 className="nav-button-title">TOP POLISH CHART</h2>
                 </button>
               </div>
             )

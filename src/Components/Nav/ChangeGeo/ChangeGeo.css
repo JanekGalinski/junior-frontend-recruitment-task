@@ -1,7 +1,8 @@
-h2 {
+.nav-button-title {
     font-weight: 700;
     font-size: 14px;
     color: #3C64B1;
+    margin: 0 0;
 }
 
 button {
@@ -14,15 +15,16 @@ button {
     width: 105%;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .arrow-down {
     border: solid #3C64B1;
-  border-width: 0 1px 1px 0;
-  align-self: center;
-  padding: 3px;
-  transform: rotate(45deg);
+    border-width: 0 1px 1px 0;
+    align-self: center;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin: 0 0;
 }
 
 .nav-button-second {

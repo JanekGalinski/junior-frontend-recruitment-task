@@ -22,10 +22,10 @@ class TopFiveCarousel extends React.Component {
          <section className="top-carousel">
                     <h1 className="carousel-title">{this.props.type} top 5 most wanted artists</h1>
                     <div className="slideshow-container">
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
+                      <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                        <div className="carousel-inner">
                           {this.props.art.slice(0, 5).map((artist) => {
-                            if(n == 0){
+                            if(n === 0){
                               return (
                                 <BigArtist name={artist.name} inc={increment()} itemClass={"carousel-item active"} />
                             )
@@ -36,20 +36,18 @@ class TopFiveCarousel extends React.Component {
                               )
                                 }})}
                         </div>
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
+                        <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span className="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
+                        <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span className="sr-only">Next</span>
                         </a>
                       </div>
                     </div>
          </section>
       </main>
-
-
     )
   }
 }

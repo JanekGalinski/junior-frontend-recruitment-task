@@ -41,18 +41,18 @@
 .slide-text-title {
     margin-top: 20px;
     font-weight: bold;
-font-size: 32px;
-color: #000000;
+    font-size: 32px;
+    color: #000000;
 }
 
 .slide-text-tags {
     font-weight: normal;
-font-size: 16px;
-color: #373F41;
+    font-size: 16px;
+    color: #373F41;
 }
 
 .slide-text-listeners {
     font-weight: 600;
-font-size: 16px;
-color: #737B7D;
+    font-size: 16px;
+    color: #737B7D;
 }

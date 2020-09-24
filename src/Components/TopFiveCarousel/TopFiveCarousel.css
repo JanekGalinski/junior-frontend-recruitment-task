@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .carousel-title {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -40,10 +41,10 @@
 
 .carousel-control-next-icon {
     height: 16px;
-  width: 16px;
-  border: solid #3C64B1;
-  border-width: 2px 2px 0 0;
-  align-self: center;
-  padding: 3px;
-  transform: rotate(45deg);
+    width: 16px;
+    border: solid #3C64B1;
+    border-width: 2px 2px 0 0;
+    align-self: center;
+    padding: 3px;
+    transform: rotate(45deg);
 }

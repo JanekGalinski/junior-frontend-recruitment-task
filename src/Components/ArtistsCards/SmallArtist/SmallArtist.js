@@ -21,9 +21,7 @@ const useStyles = makeStyles((theme) => ({
 function SmallArtist({name, inc}) {
   const [tag, setTag] = useState([]);
   const [tagOne, setTagOne] = useState([]);
-  const [tagTwo, setTagTwo] = useState([]);
   const [listeners, setListeners] = useState([]);
-  const [photo, setPhoto] = useState([]);
 
   const classes = useStyles();
   const StyledRating = withStyles({
@@ -40,9 +38,7 @@ function SmallArtist({name, inc}) {
     .then(res => { 
       setTag(res.data.artist.tags.tag[0].name)
       setTagOne(res.data.artist.tags.tag[1].name)
-      setTagTwo(res.data.artist.tags.tag[2].name)
       setListeners(res.data.artist.stats.listeners)
-      setPhoto(res.data.artist.image[5]["#text"])
     })
   }
 
@@ -55,7 +51,7 @@ function SmallArtist({name, inc}) {
   return (
     <div className="card">
       <div className="card-photo">
-        <img className="card-photo-img" src={placeholderSrc}></img>
+        <img className="card-photo-img" src={placeholderSrc} alt="placeholder"></img>
       </div>
       <div className="card-text">
           <p className="card-text-title">{inc}. {name}</p>

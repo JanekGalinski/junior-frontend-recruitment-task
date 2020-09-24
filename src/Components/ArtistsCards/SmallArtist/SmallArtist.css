@@ -1,11 +1,12 @@
 .card {
-    width: 16%;
+    width: 20%;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    border: none;
 }
 
 .card-photo {
@@ -40,14 +41,14 @@
 
 .card-text-tag {
     font-weight: normal;
-font-size: 14px;
-color: #373F41;
+    font-size: 14px;
+    color: #373F41;
 }
 
 .card-text-listeners {
     font-weight: 600;
-font-size: 14px;
-color: #737B7D;
+    font-size: 14px;
+    color: #737B7D;
 }
 
 p {

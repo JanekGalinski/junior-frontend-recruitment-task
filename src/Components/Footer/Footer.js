@@ -19,13 +19,13 @@ function Footer() {
       <div className="container">
         <div className="footer-icons">
           <div className="footer-icons-logo">
-            <img src={iconSrc}></img>
+            <img src={iconSrc} alt="logo"></img>
           </div>
           <div className="footer-icons-media">
-            <img className="footer-icons-media-icon" src={twitterSrc}></img>
-            <img className="footer-icons-media-icon" src={youtubeSrc}></img>
-            <img className="footer-icons-media-icon" src={linkedinSrc}></img>
-            <img className="footer-icons-media-icon" src={facebookSrc}></img>
+            <img className="footer-icons-media-icon" src={twitterSrc} alt="twitter logo"></img>
+            <img className="footer-icons-media-icon" src={youtubeSrc} alt="youtube logo"></img>
+            <img className="footer-icons-media-icon" src={linkedinSrc} alt="linkedin logo"></img>
+            <img className="footer-icons-media-icon" src={facebookSrc} alt="facebook logo"></img>
           </div>
         </div>
         <div className="footer-line"></div>

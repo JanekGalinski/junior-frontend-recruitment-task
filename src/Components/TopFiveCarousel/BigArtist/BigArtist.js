@@ -50,13 +50,13 @@ function BigArtist({name, inc, itemClass}) {
   })
 
   return (
-      <div class={itemClass}>
+      <div className={itemClass}>
         <div className="inside-slide">
           <div className="slide-photo-box">
             <p className="slide-photo-box-number">{inc}</p>
           </div>
           <div className="slide-photo">
-            <img className="slide-photo-img" src={photo}></img>
+            <img className="slide-photo-img" src={photo} alt="artist"></img>
           </div>
           <div className="slide-text">
               <h1 className="slide-text-title">{name}</h1>
