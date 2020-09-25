@@ -31,8 +31,8 @@ class Nav extends React.Component {
             <div className="container-image">
               <img className="nav-header" src={headerSrc} alt="header"></img>
                <div className="container-text">
-                <h1>Top charts created by musicians</h1>
-                <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
+                <h1 className="container-text-big">Top charts created by musicians</h1>
+                <p className="container-text-small">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
                </div>
             </div>
           </nav>

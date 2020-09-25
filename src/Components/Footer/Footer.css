@@ -13,9 +13,20 @@ footer {
     justify-content: center;
 }
 
-
 @media screen and (max-width: 425px ) {
-    .container  {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px ) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1440px ) {
+    .container {
         width: 100%;
     }
 }
@@ -48,7 +59,6 @@ footer {
         width: 45%;
     }
 }
-
 
 .footer-icons-media {
     width: 15%;

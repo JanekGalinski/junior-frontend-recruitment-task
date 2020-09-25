@@ -17,7 +17,6 @@ class App extends React.Component {
 
   callbackFunction = (childData) => {
       this.setState({message: childData, type: "Polish"})
-      console.log(this.state.message)
       fetch('http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=poland&api_key=b13851316d3a6ff1ac99cf76140016cc&format=json')
             .then(res => res.json())
             .then(json => { 

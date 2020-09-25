@@ -9,7 +9,11 @@
     border: 1px solid #E2E5E6;
 }
 
-
+@media screen and (min-width: 2560px ) {
+    .inside-slide {
+        height: 600px;
+    }
+}
 
 .slide-photo-box {
     display: flex;

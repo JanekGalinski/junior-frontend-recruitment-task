@@ -11,14 +11,20 @@
 }
 
 @media screen and (max-width: 768px ) {
-    .card{
+    .card {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 425px ) {
-    .card  {
+    .card {
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 2560px ) {
+    .card {
+        padding: 20px;
     }
 }
 
@@ -50,20 +56,21 @@
     font-size: 18px;
     color: #373F41;
     margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card-text-tag {
     font-weight: normal;
     font-size: 14px;
     color: #373F41;
+    margin: 0 0;
 }
 
 .card-text-listeners {
     font-weight: 600;
     font-size: 14px;
     color: #737B7D;
-}
-
-p {
     margin: 0 0;
 }
