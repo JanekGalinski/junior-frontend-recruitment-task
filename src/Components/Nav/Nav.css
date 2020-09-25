@@ -24,16 +24,29 @@ h1 {
     color: #373F41;
 }
 
+@media screen and (min-width: 2560px ) {
+    h1 {
+        font-size: 100px;
+    }
+}
+
 p {
     font-weight: normal;
     font-size: 16px;
     color: #737B7D;
 }
 
+@media screen and (min-width: 2560px ) {
+    p {
+        font-size: 40px;
+    }
+}
+
 .container-image {
     position: relative;
     text-align: center;
 }
+
 
 .container-text {
     position: absolute;
@@ -46,9 +59,20 @@ p {
     align-items: center;
 }
 
+@media screen and (max-width: 425px ) {
+    .container-text {
+        width: 90%;
+    }
+}
+
 .nav-header {
     width: 100%;
     height: calc(70vh - 88px);
     z-index: 0;
 }
 
+@media screen and (max-width: 425px ) {
+    .nav-header {
+        object-fit: cover;
+    }
+}

@@ -12,9 +12,28 @@
     color: #373F41;
 }
 
+@media screen and (max-width: 320px ) {
+    .cards-title {
+        width: 90%;
+        text-align: center;
+    }
+}
+
 .cards-layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 67%;
+}
+
+@media screen and (max-width: 425px ) {
+    .cards-layout {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px ) {
+    .cards-layout {
+        width: 80%;
+    }
 }

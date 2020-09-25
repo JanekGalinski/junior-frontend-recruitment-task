@@ -13,6 +13,13 @@
     color: #373F41;     
 }
 
+@media screen and (max-width: 425px ) {
+    .carousel-title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .slideshow-container {
     width: 100%;
     display: flex;
@@ -27,6 +34,12 @@
 
 .carousel-inner {
     width: 35%;
+}
+
+@media screen and (max-width: 425px ) {
+    .carousel-inner  {
+        width: 70%;
+    }
 }
 
 .carousel-control-prev-icon {

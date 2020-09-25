@@ -1,6 +1,6 @@
 ## About
 
-This is my website that shows top artists in the world and in Poland. It is build using React and also Axios. You can check it by downloading it and running "yarn start".
+This is my website that shows top artists in the world and in Poland. It is build using React and also Axios. You can check it by downloading it and running first "npm install" and then "yarn start", like any React app.
 
 ## Available Scripts
 
